@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CreateCellControllerViewController.h
 //  F2W1-MVC
 //
 //  Created by Leonardo Lee on 5/12/14.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Post.h"
 
-@interface ViewController : UIViewController
+@interface CreateCellControllerViewController : UIViewController
 
 @end

@@ -14,13 +14,16 @@
 		3814F5F11921698B00B4EF6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F5F01921698B00B4EF6D /* main.m */; };
 		3814F5F51921698B00B4EF6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F5F41921698B00B4EF6D /* AppDelegate.m */; };
 		3814F5F81921698B00B4EF6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3814F5F61921698B00B4EF6D /* Main.storyboard */; };
-		3814F5FB1921698B00B4EF6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F5FA1921698B00B4EF6D /* ViewController.m */; };
+		3814F5FB1921698B00B4EF6D /* PostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F5FA1921698B00B4EF6D /* PostsTableViewController.m */; };
 		3814F5FD1921698B00B4EF6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3814F5FC1921698B00B4EF6D /* Images.xcassets */; };
 		3814F6041921698B00B4EF6D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3814F6031921698B00B4EF6D /* XCTest.framework */; };
 		3814F6051921698B00B4EF6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3814F5E41921698B00B4EF6D /* Foundation.framework */; };
 		3814F6061921698B00B4EF6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3814F5E81921698B00B4EF6D /* UIKit.framework */; };
 		3814F60E1921698B00B4EF6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3814F60C1921698B00B4EF6D /* InfoPlist.strings */; };
 		3814F6101921698B00B4EF6D /* F2W1_MVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F60F1921698B00B4EF6D /* F2W1_MVCTests.m */; };
+		3814F61E192169D200B4EF6D /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F61D192169D200B4EF6D /* Post.m */; };
+		3814F62119216B0E00B4EF6D /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F62019216B0E00B4EF6D /* PostTableViewCell.m */; };
+		38A815F11921F893007ECA93 /* CreateCellControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A815F01921F893007ECA93 /* CreateCellControllerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +48,20 @@
 		3814F5F31921698B00B4EF6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3814F5F41921698B00B4EF6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3814F5F71921698B00B4EF6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3814F5F91921698B00B4EF6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3814F5FA1921698B00B4EF6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3814F5F91921698B00B4EF6D /* PostsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsTableViewController.h; sourceTree = "<group>"; };
+		3814F5FA1921698B00B4EF6D /* PostsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsTableViewController.m; sourceTree = "<group>"; };
 		3814F5FC1921698B00B4EF6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3814F6021921698B00B4EF6D /* F2W1-MVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "F2W1-MVCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3814F6031921698B00B4EF6D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3814F60B1921698B00B4EF6D /* F2W1-MVCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "F2W1-MVCTests-Info.plist"; sourceTree = "<group>"; };
 		3814F60D1921698B00B4EF6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3814F60F1921698B00B4EF6D /* F2W1_MVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F2W1_MVCTests.m; sourceTree = "<group>"; };
+		3814F61C192169D200B4EF6D /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		3814F61D192169D200B4EF6D /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		3814F61F19216B0E00B4EF6D /* PostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		3814F62019216B0E00B4EF6D /* PostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		38A815EF1921F893007ECA93 /* CreateCellControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCellControllerViewController.h; sourceTree = "<group>"; };
+		38A815F01921F893007ECA93 /* CreateCellControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCellControllerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +123,9 @@
 			children = (
 				3814F5F31921698B00B4EF6D /* AppDelegate.h */,
 				3814F5F41921698B00B4EF6D /* AppDelegate.m */,
-				3814F5F61921698B00B4EF6D /* Main.storyboard */,
-				3814F5F91921698B00B4EF6D /* ViewController.h */,
-				3814F5FA1921698B00B4EF6D /* ViewController.m */,
+				3814F61B192169AE00B4EF6D /* Model */,
+				3814F6191921699E00B4EF6D /* View */,
+				3814F61A192169A500B4EF6D /* Controller */,
 				3814F5FC1921698B00B4EF6D /* Images.xcassets */,
 				3814F5EB1921698B00B4EF6D /* Supporting Files */,
 			);
@@ -150,6 +159,36 @@
 				3814F60C1921698B00B4EF6D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3814F6191921699E00B4EF6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3814F5F61921698B00B4EF6D /* Main.storyboard */,
+				3814F61F19216B0E00B4EF6D /* PostTableViewCell.h */,
+				3814F62019216B0E00B4EF6D /* PostTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3814F61A192169A500B4EF6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3814F5F91921698B00B4EF6D /* PostsTableViewController.h */,
+				3814F5FA1921698B00B4EF6D /* PostsTableViewController.m */,
+				38A815EF1921F893007ECA93 /* CreateCellControllerViewController.h */,
+				38A815F01921F893007ECA93 /* CreateCellControllerViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3814F61B192169AE00B4EF6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3814F61C192169D200B4EF6D /* Post.h */,
+				3814F61D192169D200B4EF6D /* Post.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3814F5FB1921698B00B4EF6D /* ViewController.m in Sources */,
+				3814F5FB1921698B00B4EF6D /* PostsTableViewController.m in Sources */,
 				3814F5F51921698B00B4EF6D /* AppDelegate.m in Sources */,
 				3814F5F11921698B00B4EF6D /* main.m in Sources */,
+				3814F62119216B0E00B4EF6D /* PostTableViewCell.m in Sources */,
+				38A815F11921F893007ECA93 /* CreateCellControllerViewController.m in Sources */,
+				3814F61E192169D200B4EF6D /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +498,7 @@
 				3814F6151921698B00B4EF6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3814F6161921698B00B4EF6D /* Build configuration list for PBXNativeTarget "F2W1-MVCTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +507,7 @@
 				3814F6181921698B00B4EF6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
