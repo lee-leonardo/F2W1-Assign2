@@ -54,16 +54,49 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Posts" id="M1o-uE-BKa"/>
+                    <navigationItem key="navigationItem" title="Posts" id="M1o-uE-BKa">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="0D0-pH-g9N">
+                            <connections>
+                                <segue destination="ggu-Qz-IWr" kind="modal" id="tbO-Kw-jQg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="711" y="187"/>
         </scene>
-        <!--Create Cell Controller View Controller-->
+        <!--Edit Post View Controller-->
+        <scene sceneID="x4f-Ub-3V3">
+            <objects>
+                <viewController id="ggu-Qz-IWr" customClass="EditPostViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nS9-Ga-lUG"/>
+                        <viewControllerLayoutGuide type="bottom" id="MYY-uo-z9P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J0D-48-agU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-s6-e9o">
+                                <rect key="frame" x="142" y="518" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BnU-o9-hby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1157" y="503"/>
+        </scene>
+        <!--Create Post View Controller-->
         <scene sceneID="bFd-iE-Fdi">
             <objects>
-                <viewController id="pnR-5m-Yx4" customClass="CreateCellControllerViewController" sceneMemberID="viewController">
+                <viewController id="pnR-5m-Yx4" customClass="CreatePostViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3C-vf-W1u"/>
                         <viewControllerLayoutGuide type="bottom" id="Pvp-jW-ZDa"/>
@@ -73,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGg-He-Erm">
-                                <rect key="frame" x="20" y="51" width="97" height="30"/>
+                                <rect key="frame" x="20" y="76" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -98,8 +131,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqu-db-aYk">
-                                <rect key="frame" x="142" y="518" width="37" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTa-Sv-BgV">
+                                <rect key="frame" x="137" y="518" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfm-cC-htK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="854"/>
+            <point key="canvasLocation" x="1157" y="-281"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U8f-hL-EA5">

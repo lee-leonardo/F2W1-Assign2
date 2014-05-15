@@ -23,7 +23,9 @@
 		3814F6101921698B00B4EF6D /* F2W1_MVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F60F1921698B00B4EF6D /* F2W1_MVCTests.m */; };
 		3814F61E192169D200B4EF6D /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F61D192169D200B4EF6D /* Post.m */; };
 		3814F62119216B0E00B4EF6D /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F62019216B0E00B4EF6D /* PostTableViewCell.m */; };
-		38A815F11921F893007ECA93 /* CreateCellControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A815F01921F893007ECA93 /* CreateCellControllerViewController.m */; };
+		388E2D22192413AF009387E9 /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E2D21192413AF009387E9 /* UIColor+ColorChange.m */; };
+		38967F2C192404A70024A648 /* EditPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38967F2B192404A70024A648 /* EditPostViewController.m */; };
+		38A815F11921F893007ECA93 /* CreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A815F01921F893007ECA93 /* CreatePostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +62,12 @@
 		3814F61D192169D200B4EF6D /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		3814F61F19216B0E00B4EF6D /* PostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
 		3814F62019216B0E00B4EF6D /* PostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
-		38A815EF1921F893007ECA93 /* CreateCellControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCellControllerViewController.h; sourceTree = "<group>"; };
-		38A815F01921F893007ECA93 /* CreateCellControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCellControllerViewController.m; sourceTree = "<group>"; };
+		388E2D20192413AF009387E9 /* UIColor+ColorChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorChange.h"; sourceTree = "<group>"; };
+		388E2D21192413AF009387E9 /* UIColor+ColorChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorChange.m"; sourceTree = "<group>"; };
+		38967F2A192404A70024A648 /* EditPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPostViewController.h; sourceTree = "<group>"; };
+		38967F2B192404A70024A648 /* EditPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPostViewController.m; sourceTree = "<group>"; };
+		38A815EF1921F893007ECA93 /* CreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePostViewController.h; sourceTree = "<group>"; };
+		38A815F01921F893007ECA93 /* CreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,8 @@
 				3814F61B192169AE00B4EF6D /* Model */,
 				3814F6191921699E00B4EF6D /* View */,
 				3814F61A192169A500B4EF6D /* Controller */,
+				388E2D20192413AF009387E9 /* UIColor+ColorChange.h */,
+				388E2D21192413AF009387E9 /* UIColor+ColorChange.m */,
 				3814F5FC1921698B00B4EF6D /* Images.xcassets */,
 				3814F5EB1921698B00B4EF6D /* Supporting Files */,
 			);
@@ -176,8 +184,10 @@
 			children = (
 				3814F5F91921698B00B4EF6D /* PostsTableViewController.h */,
 				3814F5FA1921698B00B4EF6D /* PostsTableViewController.m */,
-				38A815EF1921F893007ECA93 /* CreateCellControllerViewController.h */,
-				38A815F01921F893007ECA93 /* CreateCellControllerViewController.m */,
+				38A815EF1921F893007ECA93 /* CreatePostViewController.h */,
+				38A815F01921F893007ECA93 /* CreatePostViewController.m */,
+				38967F2A192404A70024A648 /* EditPostViewController.h */,
+				38967F2B192404A70024A648 /* EditPostViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -288,11 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38967F2C192404A70024A648 /* EditPostViewController.m in Sources */,
 				3814F5FB1921698B00B4EF6D /* PostsTableViewController.m in Sources */,
 				3814F5F51921698B00B4EF6D /* AppDelegate.m in Sources */,
 				3814F5F11921698B00B4EF6D /* main.m in Sources */,
 				3814F62119216B0E00B4EF6D /* PostTableViewCell.m in Sources */,
-				38A815F11921F893007ECA93 /* CreateCellControllerViewController.m in Sources */,
+				388E2D22192413AF009387E9 /* UIColor+ColorChange.m in Sources */,
+				38A815F11921F893007ECA93 /* CreatePostViewController.m in Sources */,
 				3814F61E192169D200B4EF6D /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

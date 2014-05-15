@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Leonardo Lee. All rights reserved.
 //
 
-#import "CreateCellControllerViewController.h"
+#import "CreatePostViewController.h"
 
-@interface CreateCellControllerViewController ()
+@interface CreatePostViewController ()
 
 @end
 
-@implementation CreateCellControllerViewController
+@implementation CreatePostViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

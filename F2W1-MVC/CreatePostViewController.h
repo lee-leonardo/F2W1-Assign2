@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Post.h"
 
-@interface CreateCellControllerViewController : UIViewController
+@interface CreatePostViewController : UIViewController
 
 @end
