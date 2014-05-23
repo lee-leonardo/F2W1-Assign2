@@ -38,7 +38,7 @@
 {
 	self.textLabel.text = post.title;
 	self.detailTextLabel.text = post.content;
-	
+		
 }
 
 @end

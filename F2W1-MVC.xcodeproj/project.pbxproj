@@ -23,6 +23,9 @@
 		3814F6101921698B00B4EF6D /* F2W1_MVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F60F1921698B00B4EF6D /* F2W1_MVCTests.m */; };
 		3814F61E192169D200B4EF6D /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F61D192169D200B4EF6D /* Post.m */; };
 		3814F62119216B0E00B4EF6D /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814F62019216B0E00B4EF6D /* PostTableViewCell.m */; };
+		385F8C39192C0EDE00AEE601 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 385F8C38192C0EDE00AEE601 /* UIImage+ImageEffects.m */; };
+		38621890192BD74500ACD050 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862188F192BD74500ACD050 /* PictureViewController.m */; };
+		38621892192BDC4000ACD050 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38621891192BDC4000ACD050 /* AssetsLibrary.framework */; };
 		388E2D22192413AF009387E9 /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 388E2D21192413AF009387E9 /* UIColor+ColorChange.m */; };
 		38967F2C192404A70024A648 /* EditPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38967F2B192404A70024A648 /* EditPostViewController.m */; };
 		38A815F11921F893007ECA93 /* CreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A815F01921F893007ECA93 /* CreatePostViewController.m */; };
@@ -62,6 +65,11 @@
 		3814F61D192169D200B4EF6D /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		3814F61F19216B0E00B4EF6D /* PostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
 		3814F62019216B0E00B4EF6D /* PostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		385F8C37192C0EDE00AEE601 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		385F8C38192C0EDE00AEE601 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		3862188E192BD74500ACD050 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		3862188F192BD74500ACD050 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		38621891192BDC4000ACD050 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		388E2D20192413AF009387E9 /* UIColor+ColorChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorChange.h"; sourceTree = "<group>"; };
 		388E2D21192413AF009387E9 /* UIColor+ColorChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorChange.m"; sourceTree = "<group>"; };
 		38967F2A192404A70024A648 /* EditPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPostViewController.h; sourceTree = "<group>"; };
@@ -75,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38621892192BDC4000ACD050 /* AssetsLibrary.framework in Frameworks */,
 				3814F5E71921698B00B4EF6D /* CoreGraphics.framework in Frameworks */,
 				3814F5E91921698B00B4EF6D /* UIKit.framework in Frameworks */,
 				3814F5E51921698B00B4EF6D /* Foundation.framework in Frameworks */,
@@ -116,6 +125,7 @@
 		3814F5E31921698B00B4EF6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38621891192BDC4000ACD050 /* AssetsLibrary.framework */,
 				3814F5E41921698B00B4EF6D /* Foundation.framework */,
 				3814F5E61921698B00B4EF6D /* CoreGraphics.framework */,
 				3814F5E81921698B00B4EF6D /* UIKit.framework */,
@@ -127,13 +137,13 @@
 		3814F5EA1921698B00B4EF6D /* F2W1-MVC */ = {
 			isa = PBXGroup;
 			children = (
-				3814F5F31921698B00B4EF6D /* AppDelegate.h */,
-				3814F5F41921698B00B4EF6D /* AppDelegate.m */,
-				3814F61B192169AE00B4EF6D /* Model */,
+				38B98AAC192A8977008B62C7 /* PostVC */,
+				38B98AA9192A87A5008B62C7 /* UIImagePicker */,
 				3814F6191921699E00B4EF6D /* View */,
-				3814F61A192169A500B4EF6D /* Controller */,
 				388E2D20192413AF009387E9 /* UIColor+ColorChange.h */,
 				388E2D21192413AF009387E9 /* UIColor+ColorChange.m */,
+				3814F5F31921698B00B4EF6D /* AppDelegate.h */,
+				3814F5F41921698B00B4EF6D /* AppDelegate.m */,
 				3814F5FC1921698B00B4EF6D /* Images.xcassets */,
 				3814F5EB1921698B00B4EF6D /* Supporting Files */,
 			);
@@ -173,8 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				3814F5F61921698B00B4EF6D /* Main.storyboard */,
-				3814F61F19216B0E00B4EF6D /* PostTableViewCell.h */,
-				3814F62019216B0E00B4EF6D /* PostTableViewCell.m */,
+				38B98AA8192A879A008B62C7 /* PostTable */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -199,6 +208,51 @@
 				3814F61D192169D200B4EF6D /* Post.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		38B98AA8192A879A008B62C7 /* PostTable */ = {
+			isa = PBXGroup;
+			children = (
+				3814F61F19216B0E00B4EF6D /* PostTableViewCell.h */,
+				3814F62019216B0E00B4EF6D /* PostTableViewCell.m */,
+			);
+			name = PostTable;
+			sourceTree = "<group>";
+		};
+		38B98AA9192A87A5008B62C7 /* UIImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				385F8C37192C0EDE00AEE601 /* UIImage+ImageEffects.h */,
+				385F8C38192C0EDE00AEE601 /* UIImage+ImageEffects.m */,
+				38B98AAB192A896F008B62C7 /* Controller */,
+				38B98AAA192A895C008B62C7 /* Model */,
+			);
+			name = UIImagePicker;
+			sourceTree = "<group>";
+		};
+		38B98AAA192A895C008B62C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38B98AAB192A896F008B62C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3862188E192BD74500ACD050 /* PictureViewController.h */,
+				3862188F192BD74500ACD050 /* PictureViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		38B98AAC192A8977008B62C7 /* PostVC */ = {
+			isa = PBXGroup;
+			children = (
+				3814F61B192169AE00B4EF6D /* Model */,
+				3814F61A192169A500B4EF6D /* Controller */,
+			);
+			name = PostVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +356,9 @@
 				3814F5FB1921698B00B4EF6D /* PostsTableViewController.m in Sources */,
 				3814F5F51921698B00B4EF6D /* AppDelegate.m in Sources */,
 				3814F5F11921698B00B4EF6D /* main.m in Sources */,
+				38621890192BD74500ACD050 /* PictureViewController.m in Sources */,
 				3814F62119216B0E00B4EF6D /* PostTableViewCell.m in Sources */,
+				385F8C39192C0EDE00AEE601 /* UIImage+ImageEffects.m in Sources */,
 				388E2D22192413AF009387E9 /* UIColor+ColorChange.m in Sources */,
 				38A815F11921F893007ECA93 /* CreatePostViewController.m in Sources */,
 				3814F61E192169D200B4EF6D /* Post.m in Sources */,

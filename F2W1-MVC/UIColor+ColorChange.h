@@ -10,6 +10,6 @@
 
 @interface UIColor (ColorChange)
 +(UIColor *) randomColor;
--(UIColor *)lightenColor:(UIColor *)color by:(CGFloat *)percentAmount;
+-(UIColor *)lightenColor:(UIColor *)color;
 
 @end
