@@ -58,7 +58,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Posts" id="M1o-uE-BKa">
-                        <barButtonItem key="rightBarButtonItem" title="New" id="QE2-DW-A6I">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QE2-DW-A6I">
                             <connections>
                                 <segue destination="Kz3-cy-ltW" kind="modal" identifier="createPostView" id="f4N-2q-Xav"/>
                             </connections>

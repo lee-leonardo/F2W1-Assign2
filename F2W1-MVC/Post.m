@@ -7,6 +7,7 @@
 //
 
 #import "Post.h"
+#import "UIColor+ColorChange.h"
 
 //Michael helped me with this design pattern.
 @implementation Post
@@ -26,6 +27,9 @@
 		_title = title;
 		_content = content;
 		_timeStamp = timeStamp;
+		
+		_color = [UIColor randomColor];
+		[_color lightenColor:self.color];
 	}
 	return self;
 }

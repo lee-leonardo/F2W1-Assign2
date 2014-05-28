@@ -13,6 +13,7 @@
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, strong) NSDate *timeStamp;
+@property (nonatomic, strong) UIColor *color;
 
 -(instancetype) initWithName:(NSString *)userName title:(NSString *)title content:(NSString *)content timeStamp:(NSDate *)timeStamp;
 @end

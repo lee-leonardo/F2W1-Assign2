@@ -11,7 +11,6 @@
 #import "PostTableViewCell.h"
 #import "CreatePostViewController.h"
 #import "EditPostViewController.h"
-#import "UIColor+ColorChange.h"
 
 /*
  Things to do:
@@ -38,6 +37,8 @@ static NSString *const cellID = @"Cell"; //This is to make calling the Cell usef
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+//	This just populates the array with things to play with.
 	_posts = [NSMutableArray new];
 	for (int i = 0; i < 10; i++)
 	{
@@ -56,9 +57,10 @@ static NSString *const cellID = @"Cell"; //This is to make calling the Cell usef
 {
 	//This creates a new TableViewCell. This cell gets its information by the method setPost, which is within PostTableViewCell.
 	PostTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-	cell.backgroundColor = [UIColor randomColor];
-	[cell.backgroundColor lightenColor:cell.backgroundColor];
-	[cell setPost:[self.posts objectAtIndex:indexPath.row]];
+	
+	Post *cellObject = [self.posts objectAtIndex:indexPath.row];
+
+	[cell setPost:cellObject];
 	
 	return cell;
 }
@@ -82,8 +84,14 @@ static NSString *const cellID = @"Cell"; //This is to make calling the Cell usef
 		EditPostViewController *editPostVC = navigationController.viewControllers.firstObject;
 		editPostVC.delegate = self;
 		editPostVC.postEditing = [self.tableView indexPathForSelectedRow];
-		
 	}
+}
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//	cell.textLabel.text = [[self.posts objectAtIndex:indexPath.row] title];
+//	cell.detailTextLabel.text = [[self.posts objectAtIndex:indexPath.row] content];
+	cell.backgroundColor = [[self.posts objectAtIndex:indexPath.row] color];
+	
 }
 
 #pragma mark - CreatePostViewControllerDelegation
@@ -94,7 +102,6 @@ static NSString *const cellID = @"Cell"; //This is to make calling the Cell usef
 									  title:title
 									content:content
 								  timeStamp:[NSDate date]];
-
 	
 	[_posts addObject:newPost];
 	

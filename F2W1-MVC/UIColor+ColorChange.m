@@ -22,12 +22,11 @@
 -(UIColor *)lightenColor:(UIColor *)color
 {
 	CGFloat hue, sat, bright, alpha;
-	CGFloat change = 20.0;
 	
 	[color getHue:&hue saturation:&sat brightness:&bright alpha:&alpha];
 	
 //	Make sure that we can do this by side effect rather than the current method before submission.
-	return [color initWithHue:hue saturation:(sat-(change))/10 brightness:(bright+(2*change))/10 alpha:alpha];
+	return [color initWithHue:hue saturation:0.4 brightness:0.8 alpha:alpha];
 }
 
 @end
