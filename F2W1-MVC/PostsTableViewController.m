@@ -116,14 +116,14 @@ static NSString *const cellID = @"Cell"; //This is to make calling the Cell usef
 }
 
 #pragma mark - EditPostViewControllerDelegation
--(void)finishEditAtIndex:(NSUInteger *)indexPath title:(NSString *)title content:(NSString *)content
+-(void)finishEditAtIndex:(NSIndexPath *)indexPath title:(NSString *)title content:(NSString *)content
 {
-	Post *editedPost = [self.posts objectAtIndex:*indexPath];
+	Post *editedPost = [self.posts objectAtIndex:indexPath.row];
 	editedPost.title = title;
 	editedPost.content = content;
 	
 //	This is the parallel to the createPost method. This
-	[_posts replaceObjectAtIndex:*indexPath withObject:editedPost];
+	[_posts replaceObjectAtIndex:indexPath.row withObject:editedPost];
 	[self.tableView reloadData];
 }
 

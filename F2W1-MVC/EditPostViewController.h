@@ -10,7 +10,7 @@
 #import "Post.h"
 
 @protocol EditPostViewControllerDelegate <NSObject>
--(void)finishEditAtIndex:(NSUInteger *)indexPath title:(NSString *)title content:(NSString *)content;
+-(void)finishEditAtIndex:(NSIndexPath *)indexPath title:(NSString *)title content:(NSString *)content;
 
 @end
 

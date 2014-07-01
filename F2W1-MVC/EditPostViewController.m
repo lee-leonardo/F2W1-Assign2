@@ -19,10 +19,10 @@
 {
     [super viewDidLoad];
 	
-	NSLog(@"%@", _postToEdit);
-	NSLog(@"%@", _postEditing);
+//	Just to make sure that the right object were being sent.
+//	NSLog(@"%@", _postToEdit);
+//	NSLog(@"%@", _postEditing);
 
-	
 	[_changeTitle setPlaceholder:_postToEdit.title];
 	[_changeContent setText:_postToEdit.content];
 	
@@ -31,9 +31,9 @@
 
 - (IBAction)finishEdit:(id)sender {
 	
-//	[self.delegate finishEditAtIndex:indexPath
-//								   title:_changeTitle
-//								 content:_changeContent];
+	[self.delegate finishEditAtIndex:_postEditing
+								   title:_changeTitle.text
+								 content:_changeContent.text];
 	
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
