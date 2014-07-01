@@ -80,9 +80,12 @@ static NSString *const cellID = @"Cell"; //This is to make calling the Cell usef
 	} else if ([segue.identifier isEqualToString:@"editPostView"])
 	{
 		UINavigationController *navigationController = segue.destinationViewController;
+		NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+		
 		EditPostViewController *editPostVC = navigationController.viewControllers.firstObject;
 		editPostVC.delegate = self;
-		editPostVC.postEditing = [self.tableView indexPathForSelectedRow];
+		editPostVC.postEditing = indexPath;
+		editPostVC.postToEdit = [self.posts objectAtIndex:indexPath.row];
 	}
 }
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath

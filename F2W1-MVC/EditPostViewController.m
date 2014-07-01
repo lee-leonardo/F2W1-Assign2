@@ -18,6 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	NSLog(@"%@", _postToEdit);
+	NSLog(@"%@", _postEditing);
+
+	
 	[_changeTitle setPlaceholder:_postToEdit.title];
 	[_changeContent setText:_postToEdit.content];
 	
@@ -26,7 +31,7 @@
 
 - (IBAction)finishEdit:(id)sender {
 	
-//	[self.delegate finishPostEditAtIndex:indexPath.row
+//	[self.delegate finishEditAtIndex:indexPath
 //								   title:_changeTitle
 //								 content:_changeContent];
 	
