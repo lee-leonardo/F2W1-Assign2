@@ -22,15 +22,14 @@
  2.
  */
 
-
-static NSString *const cellID = @"Cell"; //This is to make calling the Cell useful.
-
 @interface PostsTableViewController () <UITableViewDataSource, UITableViewDelegate, CreatePostViewControllerDelegate, EditPostViewControllerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *posts;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
+
+static NSString *const cellID = @"Cell"; //This is to make calling the Cell useful.
 
 @implementation PostsTableViewController
 
@@ -103,15 +102,20 @@ static NSString *const cellID = @"Cell"; //This is to make calling the Cell usef
 									content:content
 								  timeStamp:[NSDate date]];
 	
-	[_posts addObject:newPost];
+//	Testing NSLogs.
+//	NSLog(@"Name: %@", newPost.userName);
+//	NSLog(@"Title: %@", newPost.title);
+//	NSLog(@"Content: %@", newPost.content);
 	
+	
+	[_posts addObject:newPost];
 	[self.tableView reloadData];
 }
 
 #pragma mark - EditPostViewControllerDelegation
 -(void)finishEditAtIndex:(NSUInteger *)indexPath title:(NSString *)title content:(NSString *)content
 {
-	Post *editedPost = [_posts objectAtIndex:*indexPath];
+	Post *editedPost = [self.posts objectAtIndex:*indexPath];
 	editedPost.title = title;
 	editedPost.content = content;
 	

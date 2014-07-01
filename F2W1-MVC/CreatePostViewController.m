@@ -24,9 +24,11 @@
     // Do any additional setup after loading the view.
 }
 - (IBAction)finishNewPost:(id)sender {
-	NSString *name = [NSString stringWithFormat:@"%@", _name];
-	NSString *title = [NSString stringWithFormat:@"%@", _postTitle];
-	NSString *content = [NSString stringWithFormat:@"%@", _content];
+	NSString *name = [NSString stringWithFormat:@"%@", _name.text];
+	NSString *title = [NSString stringWithFormat:@"%@", _postTitle.text];
+	NSString *content = [NSString stringWithFormat:@"%@", _content.text];
+	
+//	NSLog(@"%@", self.delegate);
 	
 	[self.delegate createPostWithUser:name title:title content:content date:[NSDate date]];
 	[self dismissViewControllerAnimated:YES completion:nil];
